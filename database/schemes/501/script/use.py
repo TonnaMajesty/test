@@ -1,0 +1,1 @@
+﻿src_directory = 'D:/ApacheAppServ/www/testworm/database/schemes/easyTest'  # 待修改源码路径

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<catalog>
+    <connection description="浏览器及server地址">
+        <hub browser="FF" enabled="True">http://127.0.0.1:4444/wd/hub</hub>
+        <hub browser="Chrome" enabled="False">http://127.0.0.1:4444/wd/hub</hub>
+        <hub browser="IE" enabled="False">http://127.0.0.1:4444/wd/hub</hub>
+    </connection>
+    <scene description="脚本执行顺序为子标签排列顺序" schemeId="">
+        <testCase enabled="True" paramPath="" scriptId=""></testCase>
+    </scene>
+</catalog>

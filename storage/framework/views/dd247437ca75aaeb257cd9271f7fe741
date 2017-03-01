@@ -1,0 +1,20 @@
+ <?php $__env->startSection('mastercontent'); ?>
+<link href="<?php echo e(url('/css/plugins/dataTables/dataTables.bootstrap.css')); ?>"
+	rel="stylesheet" type="text/css" />
+<link href="<?php echo e(url('/css/plugins/iCheck/icheck.css')); ?>" rel="stylesheet"
+	type="text/css" />
+<link href="<?php echo e(url('/css/classical/classical.css')); ?>" rel="stylesheet"
+	type="text/css" />
+<link rel="stylesheet" href="<?php echo e(url('css/classical/common.css')); ?>">
+<link rel="stylesheet" href="<?php echo e(url('css/classical/index.css')); ?>">
+<script type="text/javascript"
+	src="<?php echo e(url('/javascript/plugins/dataTables/jquery.dataTables.js')); ?>"></script>
+<script type="text/javascript"
+	src="<?php echo e(url('/javascript/plugins/iCheck/icheck.min.js')); ?>"></script>
+<script type="text/javascript" src="<?php echo e(url('/javascript/tablelist.js')); ?>"></script>
+<script type="text/javascript"
+	src="<?php echo e(url('/javascript/systemsettings/systemsettings.js')); ?>"></script>
+<div class="formbody form-horizontal"><?php echo $__env->yieldContent('content'); ?></div>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

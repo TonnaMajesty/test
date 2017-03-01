@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="369"><testCase paramPath="" enabled="True" scriptId="517">U易联项目/U易联企业号/登录/登陆.py</testCase><testCase paramPath="" enabled="True" scriptId="504">U易联项目/U易联企业号/素材/多图文消息.py</testCase><testCase paramPath="" enabled="True" scriptId="516">U易联项目/U易联企业号/登录/登出.py</testCase></scene></catalog>

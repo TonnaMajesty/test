@@ -1,0 +1,44 @@
+[2017-02-28 09:53:08] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 18:43:20] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 18:49:40] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 18:51:14] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 18:51:54] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 19:09:23] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 19:41:18] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:47:42] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:48:34] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:48:38] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:48:52] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:48:54] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:48:56] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:48:57] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:49:45] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:49:47] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:50:00] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Class 'Barryvdh\Debugbar\ServiceProvider::class' not found' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\ProviderRepository.php:150
+Stack trace:
+#0 {main}  
+[2017-02-28 19:51:57] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 19:52:03] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 19:58:03] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 20:01:46] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  
+[2017-02-28 20:01:54] local.INFO: G:\PHP\wamp\Apache24\htdocs\testworm\public\fonts\MSYHBD.TTF  

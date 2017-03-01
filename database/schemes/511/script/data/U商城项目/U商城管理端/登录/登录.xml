@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene>
+    <testCase>
+        <!-- name属性为测试用例类的类名 id为代表每个参数的唯一标示 -->
+        <testClass name="EasyCase">
+            <!--<param id="这里填入参数id（必填）" description="描述信息（选填）">这里填入数据（必填）</param>-->
+            <param id="url" description="">http://upmalldemo.yonyouup.com</param>
+            <param id="username" description="">jql002@jql</param>
+            <param id="password" description="">111111</param>
+        </testClass>
+    </testCase>
+
+</scene>

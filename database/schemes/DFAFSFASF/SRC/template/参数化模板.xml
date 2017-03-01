@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene>
+    <testCase>
+        <testClass name="EasyCase" description='测试用例类的类名需要对应本标签的name属性'>
+            <param id="" description=""></param>
+        </testClass>
+    </testCase>
+
+</scene>

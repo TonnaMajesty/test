@@ -1,0 +1,2 @@
+<?php
+	var_dump(json_decode('{"ret":12,"message":"\u8bf7\u6c42\u94b1\u5305\u6263\u6b3e\u5931\u8d25:\u94b1\u5305\u4f59\u989d\u4e0d\u8db3,\u4e0d\u5141\u8bb8\u64cd\u4f5c"}'));

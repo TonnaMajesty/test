@@ -1,0 +1,312 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	font-size: 13px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #2f332a;
+	font-weight: bold;
+	font-family: Helvetica, Arial, sans-serif;
+	padding-bottom: 5px;
+}
+
+h1 {
+	font-size: 24px;
+	line-height: 34px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 5px;
+}
+
+h6 {
+	font-weight: normal;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 24px;
+	text-align: center;
+}
+
+a {
+	color: #3C6E31;
+	text-decoration: underline;
+}
+
+a:hover {
+	/* 注释  modify by zhangfj */
+	/* background-color: #3C6E31; */
+	/* color: white; */
+	
+}
+
+input.radio {
+	margin: 0 2px 0 8px;
+}
+
+input.radio.first {
+	margin-left: 0;
+}
+
+input.empty {
+	color: lightgray;
+}
+
+code {
+	color: #2f332a;
+}
+
+.highlight_red {
+	color: #A60000;
+}
+
+.highlight_green {
+	color: #A7F43D;
+}
+
+li {
+	list-style: circle;
+	font-size: 12px;
+}
+
+li.title {
+	list-style: none;
+}
+
+ul.list {
+	margin-left: 17px;
+}
+
+div.content_wrap {
+	width: 600px;
+	height: 380px;
+}
+
+div.content_wrap div.left {
+	float: left;
+	width: 250px;
+}
+
+div.content_wrap div.right {
+	float: right;
+	width: 340px;
+}
+
+div.zTreeDemoBackground {
+	width: 250px;
+	height: 362px;
+	text-align: left;
+}
+
+ul.ztree {
+	margin-top: 0px;
+	/* modify by zhangfj */
+	/* border: 1px solid #617775; */
+	/* background: #f0f6e4; */
+	width: 202px;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+
+ul.log {
+	border: 1px solid #617775;
+	background: #f0f6e4;
+	width: 300px;
+	height: 170px;
+	overflow: hidden;
+}
+
+ul.log.small {
+	height: 45px;
+}
+
+ul.log li {
+	color: #666666;
+	list-style: none;
+	padding-left: 10px;
+}
+
+ul.log li.dark {
+	background-color: #E3E3E3;
+}
+
+/* ruler */
+div.ruler {
+	height: 20px;
+	width: 220px;
+	background-color: #f0f6e4;
+	border: 1px solid #333;
+	margin-bottom: 5px;
+	cursor: pointer
+}
+
+div.ruler div.cursor {
+	height: 20px;
+	width: 30px;
+	background-color: #3C6E31;
+	color: white;
+	text-align: right;
+	padding-right: 5px;
+	cursor: pointer
+}
+
+/*自定义节点皮肤*/
+.ztree li span.button.pIcon01_ico_open {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/1_open.png) no-repeat scroll 0
+		0 transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.pIcon01_ico_close {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/1_close.png) no-repeat scroll
+		0 0 transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.pIcon02_ico_open,.ztree li span.button.pIcon02_ico_close
+	{
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/2.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.icon01_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/3.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.icon02_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/4.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.icon03_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/5.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.icon04_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/6.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.icon05_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/7.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.icon06_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/8.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+/*add by zhangfj 控制树节点自定义样式 */
+.ztree li span.button.switch {
+	width: 20px;
+	height: 20px;
+}
+
+.ztree li span.button.roots_open,.ztree li span.button.root_open,.ztree li span.button.bottom_open,.ztree li span.button.center_open
+	{
+	background: url(../../../images/ztree/diy/expend-open.png) no-repeat
+		scroll 0 0 transparent !important;
+}
+
+.ztree li span.button.roots_close,.ztree li span.button.root_close,.ztree li span.button.bottom_close,.ztree li span.button.center_close
+	{
+	background: url(../../../images/ztree/diy/expend-close.png) no-repeat
+		scroll 0 0 transparent !important;
+}
+
+.ztree li span.button.edit {
+	background: url(../../../images/ztree/diy/edit.png) no-repeat scroll 0 0
+		transparent !important;
+	*vertical-align: middle
+}
+
+.ztree li span.button.project_ico_open,.ztree li span.button.project_ico_close,.ztree li span.button.project_ico_docu
+	{
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/project.png) no-repeat scroll
+		0 0 transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.project_node_ico_open,.ztree li span.button.project_node_ico_close,.ztree li span.button.bottom_docu
+	{
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/node.png) no-repeat scroll 0 0
+		transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.ztree li span.button.testcase_ico_docu {
+	margin-right: 2px;
+	background: url(../../../images/ztree/diy/script.png) no-repeat scroll 0
+		0 transparent;
+	vertical-align: top;
+	*vertical-align: middle
+}
+
+.frame {
+	background-color: white;
+}
+
+.leftFrame {
+	margin-left: 0;
+	margin-top: 0px;
+	padding-top: 0px;
+	width: 220px;
+	overflow: auto;
+	float: left;
+	height: 100%;
+	border: 1px solid #617775;
+}
+
+.rightFrame {
+	margin: 0 10px 0 270px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+}
+
+.rightFrame .container {
+	width: 100% !important;
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="460"><testCase paramPath="U商城项目/U商城管理端/登录/登录.xml" enabled="True" scriptId="539">U商城项目/U商城管理端/登录/登录.py</testCase><testCase paramPath="" enabled="True" scriptId="555">U商城项目/U商城管理端/商品信息/商品列表/商品列表.py</testCase><testCase paramPath="" enabled="True" scriptId="556">U商城项目/U商城管理端/商品信息/商品分类/商品分类.py</testCase><testCase paramPath="" enabled="True" scriptId="557">U商城项目/U商城管理端/商品信息/计量单位/计量单位.py</testCase><testCase paramPath="" enabled="True" scriptId="558">U商城项目/U商城管理端/商品信息/商品类型/商品类型.py</testCase><testCase paramPath="" enabled="True" scriptId="559">U商城项目/U商城管理端/商品信息/商品规格/商品规格.py</testCase><testCase paramPath="" enabled="True" scriptId="560">U商城项目/U商城管理端/商品信息/商品标签/商品标签.py</testCase><testCase paramPath="" enabled="True" scriptId="561">U商城项目/U商城管理端/商品信息/商品品牌/商品品牌.py</testCase><testCase paramPath="" enabled="True" scriptId="562">U商城项目/U商城管理端/商品信息/库存提示规则/库存提示规则.py</testCase></scene></catalog>

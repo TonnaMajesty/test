@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="464"><testCase paramPath="U商城项目/U商城管理端/登录/登录.xml" enabled="True" scriptId="539">U商城项目/U商城管理端/登录/登录.py</testCase><testCase paramPath="" enabled="True" scriptId="584">U商城项目/U商城管理端/站点设置/模板管理/模板管理.py</testCase><testCase paramPath="" enabled="True" scriptId="585">U商城项目/U商城管理端/站点设置/导航菜单/导航菜单.py</testCase><testCase paramPath="" enabled="True" scriptId="586">U商城项目/U商城管理端/站点设置/站点信息/站点信息.py</testCase><testCase paramPath="" enabled="True" scriptId="588">U商城项目/U商城管理端/站点设置/公告分类/公告分类.py</testCase><testCase paramPath="" enabled="True" scriptId="589">U商城项目/U商城管理端/站点设置/公告设置/公告设置.py</testCase><testCase paramPath="" enabled="True" scriptId="590">U商城项目/U商城管理端/站点设置/文章分类/文章分类.py</testCase><testCase paramPath="" enabled="True" scriptId="591">U商城项目/U商城管理端/站点设置/文章列表/文章列表.py</testCase><testCase paramPath="" enabled="True" scriptId="593">U商城项目/U商城管理端/站点设置/SEO设置/SEO设置.py</testCase><testCase paramPath="" enabled="True" scriptId="594">U商城项目/U商城管理端/站点设置/关键词设置/关键词设置.py</testCase><testCase paramPath="" enabled="True" scriptId="587">U商城项目/U商城管理端/站点设置/首页广告图片/首页广告片.py</testCase><testCase paramPath="" enabled="True" scriptId="592">U商城项目/U商城管理端/站点设置/友情链接/友情链接.py</testCase></scene></catalog>

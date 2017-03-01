@@ -1,0 +1,15 @@
+/* 前后端通信相关的配置,注释只允许使用多行方式 */
+{
+
+    /* 上传文件配置 */
+    "fileActionName": "uploadfile", /* controller里,执行上传视频的action名称 */
+    "fileFieldName": "file", /* 提交的文件表单名称 */
+    "tmpStore":"tmp",
+    "filePathFormat": "/public/upload/auto/script/{yyyy}{mm}{dd}/{time}{rand:6}/", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "fileUrlPrefix": "", /* 文件访问路径前缀 */
+    "fileMaxSize": 1024000, /* 上传大小限制，单位B，默认1M */
+    "fileAllowFiles": [
+        ".png", ".jpg", ".jpeg", ".gif", ".bmp", ".pem"
+    ], /* 上传文件格式显示 */
+    "fileNumLimit":20
+}

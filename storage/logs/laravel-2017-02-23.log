@@ -1,0 +1,52 @@
+[2017-02-23 15:22:16] local.ERROR: exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wormsystem.auto_jobs' doesn't exist' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php:288
+Stack trace:
+#0 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php(288): PDO->prepare('select aeb.id a...')
+#1 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php(612): Illuminate\Database\Connection->Illuminate\Database\{closure}(Object(Illuminate\Database\MySqlConnection), 'select aeb.id a...', Array)
+#2 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select aeb.id a...', Array, Object(Closure))
+#3 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php(293): Illuminate\Database\Connection->run('select aeb.id a...', Array, Object(Closure))
+#4 [internal function]: Illuminate\Database\Connection->select('select aeb.id a...')
+#5 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(304): call_user_func_array(Array, Array)
+#6 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(210): Illuminate\Database\DatabaseManager->__call('select', Array)
+#7 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(210): Illuminate\Database\DatabaseManager->select('select aeb.id a...')
+#8 G:\PHP\wamp\Apache24\htdocs\testworm\app\Services\WormQueueService.php(22): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#9 G:\PHP\wamp\Apache24\htdocs\testworm\app\Services\WormQueueService.php(22): Illuminate\Support\Facades\DB::select('select aeb.id a...')
+#10 G:\PHP\wamp\Apache24\htdocs\testworm\app\Console\Commands\WormQueueCommand.php(66): App\Services\WormQueueService->getQueueJobs()
+#11 G:\PHP\wamp\Apache24\htdocs\testworm\app\Console\Commands\WormQueueCommand.php(49): App\Console\Commands\WormQueueCommand->runWormer(NULL, NULL, 0, 128, true, 1)
+#12 [internal function]: App\Console\Commands\WormQueueCommand->fire()
+#13 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Container\Container.php(523): call_user_func_array(Array, Array)
+#14 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Console\Command.php(115): Illuminate\Container\Container->call(Array)
+#15 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(253): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\WormQueueCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#21 G:\PHP\wamp\Apache24\htdocs\testworm\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#22 {main}
+
+Next exception 'Illuminate\Database\QueryException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wormsystem.auto_jobs' doesn't exist (SQL: select aeb.id as browserID,aeb.chrBrowserENName,aj.id jobID,aj.intExecTaskID,
+				aj.tPayload from auto_exec_browsers aeb
+				INNER JOIN auto_jobs aj on aj.intBrowserID=aeb.id and aj.tintState=0
+				ORDER BY aj.id)' in G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php:620
+Stack trace:
+#0 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php(576): Illuminate\Database\Connection->runQueryCallback('select aeb.id a...', Array, Object(Closure))
+#1 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\Connection.php(293): Illuminate\Database\Connection->run('select aeb.id a...', Array, Object(Closure))
+#2 [internal function]: Illuminate\Database\Connection->select('select aeb.id a...')
+#3 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Database\DatabaseManager.php(304): call_user_func_array(Array, Array)
+#4 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(210): Illuminate\Database\DatabaseManager->__call('select', Array)
+#5 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php(210): Illuminate\Database\DatabaseManager->select('select aeb.id a...')
+#6 G:\PHP\wamp\Apache24\htdocs\testworm\app\Services\WormQueueService.php(22): Illuminate\Support\Facades\Facade::__callStatic('select', Array)
+#7 G:\PHP\wamp\Apache24\htdocs\testworm\app\Services\WormQueueService.php(22): Illuminate\Support\Facades\DB::select('select aeb.id a...')
+#8 G:\PHP\wamp\Apache24\htdocs\testworm\app\Console\Commands\WormQueueCommand.php(66): App\Services\WormQueueService->getQueueJobs()
+#9 G:\PHP\wamp\Apache24\htdocs\testworm\app\Console\Commands\WormQueueCommand.php(49): App\Console\Commands\WormQueueCommand->runWormer(NULL, NULL, 0, 128, true, 1)
+#10 [internal function]: App\Console\Commands\WormQueueCommand->fire()
+#11 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Container\Container.php(523): call_user_func_array(Array, Array)
+#12 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Console\Command.php(115): Illuminate\Container\Container->call(Array)
+#13 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Command\Command.php(253): Illuminate\Console\Command->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#14 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Console\Command.php(101): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#15 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Application.php(874): Illuminate\Console\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#16 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Application.php(195): Symfony\Component\Console\Application->doRunCommand(Object(App\Console\Commands\WormQueueCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#17 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\symfony\console\Symfony\Component\Console\Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#18 G:\PHP\wamp\Apache24\htdocs\testworm\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php(90): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#19 G:\PHP\wamp\Apache24\htdocs\testworm\artisan(36): Illuminate\Foundation\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#20 {main}  

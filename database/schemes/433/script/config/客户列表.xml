@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="385"><testCase paramPath="" enabled="True" scriptId="537">超客项目/公共/登录.py</testCase><testCase paramPath="" enabled="True" scriptId="522">超客项目/客户/客户列表/部门客户列表.py</testCase><testCase paramPath="" enabled="True" scriptId="523">超客项目/客户/客户列表/个人客户列表.py</testCase><testCase paramPath="" enabled="True" scriptId="536">超客项目/公共/登出.py</testCase></scene></catalog>

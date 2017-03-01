@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="False"></hub>
+    <hub browser="Chrome" enabled="True"></hub>
+    <hub browser="ie" enabled="False"></hub>
+  </connection>
+</catalog>

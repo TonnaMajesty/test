@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="463"><testCase paramPath="U商城项目/U商城管理端/登录/登录.xml" enabled="True" scriptId="539">U商城项目/U商城管理端/登录/登录.py</testCase><testCase paramPath="" enabled="True" scriptId="572">U商城项目/U商城管理端/物流管理/物流公司/物流公司.py</testCase><testCase paramPath="" enabled="True" scriptId="604">U商城项目/U商城管理端/物流管理/运费模板/配送方式.py</testCase><testCase paramPath="" enabled="True" scriptId="574">U商城项目/U商城管理端/物流管理/地址列表/地址列表.py</testCase></scene></catalog>

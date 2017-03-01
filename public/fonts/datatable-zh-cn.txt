@@ -1,0 +1,11 @@
+{
+"sSearch" : "搜索:",
+"sLengthMenu" : "每页显示 _MENU_ 条记录",
+"sZeroRecords" : "Nothing found -没有记录",
+"sInfo" : "显示第 _START_ 条到第 _END_ 条记录,一共 _TOTAL_ 条记录",
+"sInfoEmpty" : "显示0条记录",
+"oPaginate" : {
+"sPrevious" : " 上一页 ",
+"sNext" : " 下一页 "
+}
+}

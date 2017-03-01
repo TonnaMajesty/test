@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="459"><testCase paramPath="U商城项目/U商城管理端/登录/登录.xml" enabled="True" scriptId="539">U商城项目/U商城管理端/登录/登录.py</testCase><testCase paramPath="" enabled="True" scriptId="564">U商城项目/U商城管理端/促销管理/赠品促销/赠品促销.py</testCase><testCase paramPath="" enabled="True" scriptId="565">U商城项目/U商城管理端/促销管理/商品促销/商品促销.py</testCase><testCase paramPath="" enabled="True" scriptId="566">U商城项目/U商城管理端/促销管理/组合销售/组合销售.py</testCase><testCase paramPath="" enabled="True" scriptId="567">U商城项目/U商城管理端/促销管理/整单促销/整单促销.py</testCase><testCase paramPath="" enabled="True" scriptId="569">U商城项目/U商城管理端/促销管理/包邮活动/包邮活动.py</testCase><testCase paramPath="" enabled="True" scriptId="568">U商城项目/U商城管理端/促销管理/团购管理/团购管理.py</testCase><testCase paramPath="" enabled="True" scriptId="570">U商城项目/U商城管理端/促销管理/礼品卡/礼品卡.py</testCase><testCase paramPath="" enabled="True" scriptId="571">U商城项目/U商城管理端/促销管理/商品促销/秒杀.py</testCase></scene></catalog>

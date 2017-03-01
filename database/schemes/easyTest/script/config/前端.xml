@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="453"><testCase paramPath="U商城项目/U商城前端/登陆退出/前端登录.xml" enabled="True" scriptId="597">U商城项目/U商城前端/登陆退出/前端登录.py</testCase><testCase paramPath="" enabled="True" scriptId="599">U商城项目/U商城前端/站内消息/站内消息.py</testCase><testCase paramPath="" enabled="True" scriptId="600">U商城项目/U商城前端/商品分类/搜索商品分类.py</testCase><testCase paramPath="" enabled="True" scriptId="601">U商城项目/U商城前端/商品详情/商品详情.py</testCase><testCase paramPath="" enabled="True" scriptId="602">U商城项目/U商城前端/查看商品列表/查看商品列表.py</testCase><testCase paramPath="" enabled="True" scriptId="641">U商城项目/U商城前端/会员中心/会员中心/会员中心.py</testCase><testCase paramPath="" enabled="True" scriptId="608">U商城项目/U商城前端/购物车/查看购物车/查看购物车.py</testCase><testCase paramPath="" enabled="True" scriptId="609">U商城项目/U商城前端/购物车/删除购物车商品/删除购物车商品.py</testCase><testCase paramPath="" enabled="True" scriptId="610">U商城项目/U商城前端/购物车/商品结算/商品结算.py</testCase><testCase paramPath="" enabled="True" scriptId="611">U商城项目/U商城前端/购物车/订单提交/订单提交.py</testCase></scene></catalog>

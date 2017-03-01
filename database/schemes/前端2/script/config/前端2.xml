@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="456"><testCase paramPath="U商城项目/U商城前端/登陆退出/前端登录.xml" enabled="True" scriptId="597">U商城项目/U商城前端/登陆退出/前端登录.py</testCase><testCase paramPath="" enabled="True" scriptId="607">U商城项目/U商城前端/查看网站公告/查看网站公告.py</testCase><testCase paramPath="" enabled="True" scriptId="605">U商城项目/U商城前端/查看销售排行榜/查看销售排行榜.py</testCase><testCase paramPath="" enabled="True" scriptId="635">U商城项目/U商城前端/会员中心/会员信息/管理安全中心.py</testCase><testCase paramPath="" enabled="True" scriptId="636">U商城项目/U商城前端/会员中心/会员信息/设置收货地址.py</testCase><testCase paramPath="" enabled="True" scriptId="637">U商城项目/U商城前端/会员中心/会员信息/设置个人信息.py</testCase><testCase paramPath="" enabled="True" scriptId="633">U商城项目/U商城前端/会员中心/我的关注/查看收藏.py</testCase><testCase paramPath="" enabled="True" scriptId="634">U商城项目/U商城前端/会员中心/我的关注/查看咨询评价.py</testCase><testCase paramPath="" enabled="True" scriptId="631">U商城项目/U商城前端/会员中心/我的资产/查看卡券礼品卡.py</testCase><testCase paramPath="" enabled="True" scriptId="632">U商城项目/U商城前端/会员中心/我的资产/查看我的积分储值卡.py</testCase><testCase paramPath="" enabled="True" scriptId="606">U商城项目/U商城前端/搜索商品/搜索商品.py</testCase><testCase paramPath="" enabled="True" scriptId="645">U商城项目/U商城前端/登陆退出/前端退出.py</testCase></scene></catalog>

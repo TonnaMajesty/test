@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+  <connection description="浏览器及server地址">
+    <hub browser="FF" enabled="True"/>
+    <hub browser="Chrome" enabled="True"/>
+    <hub browser="ie" enabled="False"/>
+  </connection>
+<scene description="脚本执行顺序为子标签排列顺序" schemeId="461"><testCase paramPath="U商城项目/U商城管理端/登录/登录.xml" enabled="True" scriptId="539">U商城项目/U商城管理端/登录/登录.py</testCase><testCase paramPath="" enabled="True" scriptId="575">U商城项目/U商城管理端/商城设置/企业信息/企业信息.py</testCase><testCase paramPath="" enabled="True" scriptId="576">U商城项目/U商城管理端/商城设置/权限分配/权限分配.py</testCase><testCase paramPath="" enabled="True" scriptId="577">U商城项目/U商城管理端/商城设置/商城配置/商城配置.py</testCase><testCase paramPath="" enabled="True" scriptId="578">U商城项目/U商城管理端/商城设置/邮件配置/邮件配置.py</testCase><testCase paramPath="" enabled="True" scriptId="579">U商城项目/U商城管理端/商城设置/支付方式/支付方式.py</testCase><testCase paramPath="" enabled="True" scriptId="580">U商城项目/U商城管理端/商城设置/定时任务设置/定时任务设置.py</testCase><testCase paramPath="" enabled="True" scriptId="581">U商城项目/U商城管理端/商城设置/原因设置/原因设置.py</testCase><testCase paramPath="" enabled="True" scriptId="582">U商城项目/U商城管理端/商城设置/推广商设置/推广商设置.py</testCase><testCase paramPath="" enabled="True" scriptId="583">U商城项目/U商城管理端/商城设置/API设置/API设置.py</testCase></scene></catalog>
