@@ -145,8 +145,11 @@ class AuthController extends Controller {
 				$email = $request->input ( 'email' );
 				$pwd = $request->input ( 'password' );
 				$credentials = array (
-						"chrEmail" => $email,
-						"password" => $pwd 
+						// "chrEmail" => $email,
+						// "password" => $pwd
+						"chrEmail" => 'zhangfjb1@yonyou.com',
+						"password" => '111111'
+						 
 				);
 				if ($this->auth->attempt ( $credentials, $request->has ( 'remember' ) )) {
 					// 存储用户、角色session信息

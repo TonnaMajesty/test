@@ -138,6 +138,15 @@ class AutoExecReportService {
 		$reports .= "}";
 		return $reports;
 	}
+
+	public function getReportLogs($intExecTaskID){
+		$result = DB::select("SELECT s.chrScriptName,l.intLineNo,l.chrCmd,l.chrCmdParam,l.chrDescription,l.chrErrorMessage,l.chrResult,l.fltDuring,l.chrImage from auto_logs l 
+			LEFT JOIN auto_scripts s on l.intScriptID=s.id
+			where l.intExecTaskID=$intExecTaskID ORDER BY intScriptID,l.id");
+
+		return json_encode($result);
+	}
+
 }
 
 ?>

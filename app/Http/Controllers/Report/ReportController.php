@@ -137,4 +137,12 @@ class ReportController extends Controller {
 		$aerService = new AutoExecReportService ();
 		return $aerService->getReportList ( $secho, $iDisplayStart, $iDisplayLength, $user, $search,$wl );
 	}
+
+	public function getReportLogs(Request $request)
+	{
+		$intExecTaskID = $request->input('intExecTaskID');
+		$aerService = new AutoExecReportService ();
+
+		return $aerService->getReportLogs($intExecTaskID);
+	}
 }

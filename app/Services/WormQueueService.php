@@ -265,7 +265,7 @@ class WormQueueService {
 					$stateinfo = "成功";
 					break;
 			}
-			$execInfos = DB::select ( "select ate.id,chrEmails,chrUserName 
+			$execInfos = DB::select ( "select ate.id,ate.intCompanyID,ate.intCreaterID,chrEmails,chrUserName 
 					from auto_task_execs ate
 					LEFT JOIN users u on u.chrEmail=REPLACE(ate.chrEmails,';','') 
 					where ate.id =$execTaskId" );
@@ -345,6 +345,9 @@ class WormQueueService {
 				$minute = floor ( (strtotime ( $endTime ) - strtotime ( $beginTime )) % 86400 / 60 );
 				$second = floor ( (strtotime ( $endTime ) - strtotime ( $beginTime )) ) % 86400 % 60;
 				$times = $date . "天" . $hour . "小时" . $minute . "分" . $second . "秒";
+
+				$parse = $this->parseEmailData($execTaskId);
+
 				$pageData = array (
 						"user" => array (
 								"name" => $name 
@@ -358,7 +361,10 @@ class WormQueueService {
 								"times" => $times,
 								"script" => $scripts 
 						),
-						"errors" => $errLists 
+						"errors" => $errLists,
+						"task_list" => $parse['task_list'], 
+						"scheme_list" => $parse['scheme_list'], 
+						"script_sum" => $parse['script_sum']
 				);
 				$emailInfo = array (
 						"to" => $emails,
@@ -522,6 +528,30 @@ class WormQueueService {
 		} catch ( \Exception $e ) {
 			throw $e;
 		}
+	}
+
+	public function parseEmailData($execTaskId){
+		$result = [];
+		//任务详情
+		$result['task_list'] = DB::select("SELECT ats.id, chrTaskName,apro.chrProjectName, u.chrUserName,ats.updated_at, case when ate.intState=0 then '排队中' when ate.intState=1 then '执行中' when ate.intState=2 then '执行成功' when ate.intState=3 then '执行失败' else '未执行' end state,ate.chrBrowserNames, ate.id taskExecID,ats.intProjectID projectId
+              from auto_tasks ats INNER JOIN users u on u.id=ats.intCreaterID LEFT JOIN auto_task_execs ate on ate.intTaskID=ats.id INNER JOIN auto_projects apro on apro.id=ats.intProjectID where  ats.id in (select intTaskID from auto_timer_relate_tasks where intTiTaskID=(select intTimerTaskID from auto_task_execs where id=$execTaskId)) ORDER BY ats.chrTaskName desc
+			");
+		//案例详情
+		$result['scheme_list'] = DB::select("SELECT DISTINCT aus.id,
+				ats.chrTaskName, chrSchemeName schemeName,apro.chrProjectName projectName,u.chrUserName createUser, case when ate.intState=0 then '排队中' when ate.intState=1 then '执行中' when ate.intState=2 then '执行成功'
+              when ate.intState=3 then '执行失败' else '未执行' end state,ate.chrBrowserNames browserNames,ats.intProjectID projectId ,ate.id taskExecID 
+              from auto_schemes aus
+              INNER JOIN users u on u.id=aus.intCreaterID
+              INNER JOIN auto_task_relations atr on atr.intSchemeID=aus.id
+              INNER JOIN auto_tasks ats on ats.id=atr.intTaskID
+              LEFT JOIN auto_task_execs ate on ate.intTaskID=ats.id 
+              LEFT JOIN auto_projects apro on apro.id=ats.intProjectID
+              where ats.id in (select intTaskID from auto_timer_relate_tasks where intTiTaskID=(select intTimerTaskID from auto_task_execs where id=$execTaskId))");
+		//脚本日志统计分析
+		$result['script_sum'] = DB::select("SELECT count(*) count, l.chrDescription,COUNT(CASE WHEN l.chrResult='PASS' THEN '成功' END)/count(*)*100 passlv from auto_logs l LEFT JOIN auto_scripts s on l.intScriptID=s.id	where l.intExecTaskID=$execTaskId  GROUP BY l.chrDescription");
+		// dd($result['script_sum']);
+		
+		return $result;
 	}
 }
 

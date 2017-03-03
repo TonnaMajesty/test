@@ -37,13 +37,13 @@ class Handler extends ExceptionHandler {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function render($request, Exception $e) {
-		// return parent::render ( $request, $e );
+		return parent::render ( $request, $e );
 		// 重写 除了http错误 其他错误全部跳转到error页面
-		if ($this->isHttpException ( $e )) {
-			return $this->renderHttpException ( $e );
-		} else {
-			return response ()->view ( "errors.500" );
-		}
+		// if ($this->isHttpException ( $e )) {
+		// 	return $this->renderHttpException ( $e );
+		// } else {
+		// 	return response ()->view ( "errors.500" );
+		// }
 		//return parent::render ( $request, $e );
 	}
 }

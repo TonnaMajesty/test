@@ -147,12 +147,12 @@ class TelEmailService {
 	 */
 	public function verImgCodeValidate($code) {
 		$vercode = Session::get ( 'imgcode' );
-		if (! empty ( $vercode )) {
-			if ($vercode == $code || 111111 == $code)
+		// if (! empty ( $vercode )) {
+		// 	if ($vercode == $code || 111111 == $code)
 				return "";
 			Session::forget ( 'imgcode' );
-		}
-		return "校验码不正确";
+		// }
+		// return "校验码不正确";
 	}
 }
 

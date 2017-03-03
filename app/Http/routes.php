@@ -14,6 +14,8 @@ Route::group(['prefix'=>'camp'],function(){
     Route::get('/u8',"Campaign\U8Controller@index");
 });
 Route::get ( '/verify/image', 'Verify\VerifyController@index' ); // 图片验证码
+
+Route::get ( '/test', '\App\Http\Controllers\TestController@test'); //just for test
                                                                  
 // 管理中心
 Route::group ( [ 
@@ -84,6 +86,7 @@ Route::group ( [
 			'namespace' => 'Report' 
 	], function () {
 		Route::get ( "bill/list", "ReportController@getReportList" ); // 报告列表
+		Route::get ( "bill/logs", "ReportController@getReportLogs" );
 		Route::resource ( "bill", "ReportController" ); // 报告
 	} );
 	// 自动化
@@ -155,3 +158,4 @@ Route::group ( [
 ], function () {
 	Route::post ( "/log", "AutoLogController@store" );
 } );
+
