@@ -31,13 +31,6 @@ td {
 </style>
 </head>
 <body>
-	<p>{{$user["name"]}},您好：</p>
-	<p>
-		您的任务“{{$rlist["taskName"]}}”已经执行完毕，执行结果：<span style="color: red;">{{$state}}</span>！
-	</p>
-	<p>
-		以下为任务执行情况汇总信息，详细执行步骤信息请进入UpCat查看，<a href="{{$sysUrl}}">点击前往</a>！
-	</p>
 	@if(!empty($task_list))
 	<table class="task">
 	<tr>
@@ -50,12 +43,12 @@ td {
 		</tr>
 	@foreach($task_list as $task)
 		<tr>
-			<td colspan="2">{{$task["chrTaskName"]}}</td>
-			<td colspan="2">{{$task["chrProjectName"]}}</td>
-			<td colspan="2">{{$task["chrUserName"]}}</td>
-			<td colspan="2">{{$task["state"]}}</td>
-			<td colspan="2">{{$task["chrBrowserNames"]}}</td>
-			<td colspan="2">{{$task["updated_at"]}}</td>
+			<td colspan="2">{{$task->chrTaskName}}</td>
+			<td colspan="2">{{$task->chrProjectName}}</td>
+			<td colspan="2">{{$task->chrUserName}}</td>
+			<td colspan="2">{{$task->state}}</td>
+			<td colspan="2">{{$task->chrBrowserNames}}</td>
+			<td colspan="2">{{$task->updated_at}}</td>
 		</tr>
 	@endforeach
 	</table>
@@ -73,12 +66,12 @@ td {
 		</tr>
 	@foreach($scheme_list as $scheme)
 		<tr>
-			<td colspan="2">{{$scheme["chrTaskName"]}}</td>
-			<td colspan="2">{{$scheme["schemeName"]}}</td>
-			<td colspan="2">{{$scheme["projectName"]}}</td>
-			<td colspan="2">{{$scheme["createUser"]}}</td>
-			<td colspan="2">{{$scheme["state"]}}</td>
-			<td colspan="2">{{$scheme["browserNames"]}}</td>
+			<td colspan="2">{{$scheme->chrTaskName}}</td>
+			<td colspan="2">{{$scheme->schemeName}}</td>
+			<td colspan="2">{{$scheme->projectName}}</td>
+			<td colspan="2">{{$scheme->createUser}}</td>
+			<td colspan="2">{{$scheme->state}}</td>
+			<td colspan="2">{{$scheme->browserNames}}</td>
 		</tr>
 	@endforeach
 	</table>
@@ -86,16 +79,16 @@ td {
 
 	@if(!empty($scheme_list))
 	<table class="script_sum">
-	<tr>
+		<tr>
             <th colspan="4">事件</th>
             <th colspan="4">次数</th>
             <th colspan="4">成功率</th>
 		</tr>
 	@foreach($script_sum as $val)
 		<tr>
-			<td colspan="2">{{$val["chrDescription"]}}</td>
-			<td colspan="2">{{$val["count"]}}</td>
-			<td colspan="2">{{$val["passlv"]}} %</td>
+			<td colspan="4">{{$val->chrDescription}}</td>
+			<td colspan="4">{{$val->count}}</td>
+			<td colspan="4">{{$val->passlv}} %</td>
 		</tr>
 	@endforeach
 	</table>

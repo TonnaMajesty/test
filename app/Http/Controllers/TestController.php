@@ -72,9 +72,16 @@ class TestController extends Controller
 	// 					left JOIN auto_reports arep on arep.id=871");
 	// 	dd($result);
 	// }
+	// public function test()
+	// {
+	// 	$result = $this->wq->parseEmailData('1226');
+	// 	echo '<pre>';
+	// 	var_dump($result);
+	// }
+	// 
 	public function test()
 	{
-		$result = $this->wq->parseEmailData('1226');
-		dd($result);
+		$datas = $this->wq->parseEmailData('1226');
+		return view ( "emails.reportplus" )->with ( $datas );
 	}
 }
