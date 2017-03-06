@@ -75,13 +75,17 @@ class TestController extends Controller
 	// public function test()
 	// {
 	// 	$result = $this->wq->parseEmailData('1226');
-	// 	echo '<pre>';
-	// 	var_dump($result);
+	// 	// echo '<pre>';
+	// 	dd($result);
 	// }
-	// 
+	
+	// public function test()
+	// {
+	// 	$datas = $this->wq->parseEmailData('1226');
+	// 	return view ( "emails.reportplus" )->with ( $datas );
+	// }
 	public function test()
 	{
-		$datas = $this->wq->parseEmailData('1226');
-		return view ( "emails.reportplus" )->with ( $datas );
+		$this->wq->sendEmail('1226','5','1073','test');
 	}
 }

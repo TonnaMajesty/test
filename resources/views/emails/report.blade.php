@@ -4,7 +4,11 @@
 <title>UpCAT</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
 <style type="text/css">
+body{
+	margin:0;
+}
 table {
+	align: center;
 	font-family: verdana, arial, sans-serif;
 	font-size: 14px;
 	color: #333333;

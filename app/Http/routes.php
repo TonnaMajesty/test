@@ -16,6 +16,7 @@ Route::group(['prefix'=>'camp'],function(){
 Route::get ( '/verify/image', 'Verify\VerifyController@index' ); // 图片验证码
 
 Route::get ( '/test', '\App\Http\Controllers\TestController@test'); //just for test
+Route::get ( '/upda', '\App\Http\Controllers\Report\BugController@create'); //just for test
                                                                  
 // 管理中心
 Route::group ( [ 
@@ -88,6 +89,7 @@ Route::group ( [
 		Route::get ( "bill/list", "ReportController@getReportList" ); // 报告列表
 		Route::get ( "bill/logs", "ReportController@getReportLogs" );
 		Route::resource ( "bill", "ReportController" ); // 报告
+		Route::resource ( "bug", "BugController" ); // bug分析
 	} );
 	// 自动化
 	Route::group ( [ 
